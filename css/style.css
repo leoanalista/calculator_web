@@ -31,12 +31,13 @@ input[type="number"] {
 	width: 	250px;
 	height: 40px;	
 	text-align: center;
-	border-radius: 	25px;
-	border:none;	 	 	
+	border-radius: 25px;
+	border-style: solid;
+	border-color: white; 	
 }
 
 input[type="number"]:focus {
-	box-shadow: 0 0 0 0;
+	box-shadow: 0 0 0.5em gold;
 	outline: 0;
 }
 
@@ -75,8 +76,9 @@ button:hover {
 }
 
 button:focus {
-	box-shadow: 1 1 1 1;
-	outline: 1;
+
+	box-shadow: 0 0 0.5em gold;
+	outline: 0;
 }
 
 .operations {
@@ -89,7 +91,7 @@ button:focus {
 }
 
 .calculater {
-	margin-top: 110px;
+	margin-top: 190px;
 }
 
 
