@@ -26,7 +26,7 @@ document.getElementById("calculate-button").onclick = function() {
     resultElement.innerText = getResult(val1,val2,operation);
 		}
 	}
-   
+	
     //Função para calculos
     function getResult (n1, n2, operation) {
 
@@ -40,5 +40,4 @@ document.getElementById("calculate-button").onclick = function() {
     		return n1 / n2;
     	}
     }
-
 }
