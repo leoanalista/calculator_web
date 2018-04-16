@@ -1,4 +1,4 @@
-///call button
+//call button
 document.getElementById("calculate-button").onclick = function() {
     //Pegando os valores inseridos nos elementos
     let elem1 = document.getElementById('elem-1');
@@ -14,10 +14,9 @@ document.getElementById("calculate-button").onclick = function() {
     //Função de validação de Campos nulos
     function isNumber (num1,num2) {
     	if (isNaN(num1 && num2)) {
-    		
+
     		alert('Preencha os dois campos, Parça!');
-    	} 
-    	else {
+    	} else {
  	//Pegando o botão selecionado dentro do grupo "operation"
  	let choice = document.querySelector('input[name="operation"]:checked');
  	let operation = choice.value;
@@ -25,7 +24,9 @@ document.getElementById("calculate-button").onclick = function() {
     //Mostrando o resultado no elemento (h2) "Resultado"
     let resultElement = document.getElementById('result');
     resultElement.innerText = getResult(val1,val2,operation);
-}
+		}
+	}
+   
     //Função para calculos
     function getResult (n1, n2, operation) {
 
@@ -39,5 +40,5 @@ document.getElementById("calculate-button").onclick = function() {
     		return n1 / n2;
     	}
     }
-}	
+
 }
